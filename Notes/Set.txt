@@ -1,0 +1,14 @@
+For Displaying set items
+		for(auto i=num.begin(); i != num.end(); ++i){
+			cout<<*i<<" ";
+		}
+
+set.insert(num);
+set<int> s(array, array+size); insert and array to the set
+
+To give output to specific index in set:
+	set <int> arr;				This is set
+	set <int>::iterator it = arr.begin();   Initialize an iterator
+	advance(it, index) 			give specific index
+	cout<<*it<<"\n";			it is displayed
+

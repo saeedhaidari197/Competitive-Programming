@@ -1,0 +1,8 @@
+7
+encrypt 1 aaa
+encrypt 1 zzz
+encrypt 2 xyz
+decrypt -1 abc
+decrypt -2 zbc
+encrypt 26 vvv
+decrypt -26 nnn

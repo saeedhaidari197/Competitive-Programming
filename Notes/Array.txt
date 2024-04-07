@@ -1,0 +1,8 @@
+sort(arr, arr + size) sort the array till size.
+int n = sizeof(A) / sizeof(A[0]); finding size of array
+
+Finding Minimum and Maximum in array:
+	int size= sizeof(arr)/sizeof(arr[0]);
+	cout<<*min_element(arr,arr+size)<<"\n";
+	cout<<*max_element(arr,arr+size)<<"\n";
+work with array and vector

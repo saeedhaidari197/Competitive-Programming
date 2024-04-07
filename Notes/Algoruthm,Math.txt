@@ -1,0 +1,8 @@
+Sort(a.begin(),a.end()) sort from iterator begin and end
+abs(a-b) gives the absolute number always positive Number
+__gcd(m,n) give the gcd of m and n
+
+
+sort(array , array + size) sort array in ascending
+sort(array , array + size, greater<int>()) sort array in decsending
+

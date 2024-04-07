@@ -1,0 +1,93 @@
+Convetring a full string to int, this will take the whole string and will change it to string e.g (123+4) if we convert this 
+it will be (123) in integer the other will be ignored.
+ways to convert:
+1. Using stringstream class or sscanf()
+stringstream() : This is an easy way to convert strings of digits into ints, floats or doubles. Following is a sample program
+ using a stringstream to convert string to int.
+			#include<sstream>
+			#include<iostream>
+			string s = "12345";
+			int x = 0;
+
+    			stringstream geek(s);
+			//or istringstream(str) >> s;
+  
+    			geek >> x;
+
+    			cout << "Value of x : " << x;
+
+2. String conversion using stoi() or atoi()
+stoi() : The stoi() function takes a string as an argument and returns its value. Following is a simple implementation:
+		#include<string>
+		#include<iostream>
+		string str1 = "45";
+    		string str2 = "3.14159";
+    		string str3 = "31337 geek";
+  
+    		int myint1 = stoi(str1);
+    		int myint2 = stoi(str2);
+    		int myint3 = stoi(str3);
+  
+    		cout << "stoi(\"" << str1 << "\") is "
+         	<< myint1 << '\n';
+    		cout << "stoi(\"" << str2 << "\") is "
+         	<< myint2 << '\n';
+    		cout << "stoi(\"" << str3 << "\") is "
+         	<< myint3 << '\n';
+atoi() : The atoi() function takes a character array or string literal as an argument and returns its value. Following is a simple implementation:
+
+		#include <iostream>
+		#include <cstdlib>
+   
+		const char *str1 = "42";
+    		const char *str2 = "3.14159";
+    		const char *str3 = "31337 geek";
+     
+    		int num1 = atoi(str1);
+    		int num2 = atoi(str2);
+    		int num3 = atoi(str3);
+    
+    		cout << "atoi(\"" << str1 
+              	<< "\") is " << num1 << '\n';
+    		cout << "atoi(\"" << str2 
+              	<< "\") is " << num2 << '\n';
+    		cout << "atoi(\"" << str3 
+              	<< "\") is " << num3 << '\n';
+
+
+stoi() vs atoi()
+
+atoi() is a legacy C-style function. stoi() is added in C++ 11.
+atoi() works only for C-style strings (character array and string literal), stoi() works for both C++ strings and C style strings
+atoi() takes only one parameter and returns integer value.
+
+
+
+CONVERTING ARRAY OF STRING TO ARRAY OF INTEGER
+we can convert any index of a string to integer array by this code:
+arr[j] = (Str[i] – 48)
+this code will take the string at index i change it to int and store it in index j of array which is integer.
+the sample code;
+the is input string like 1+2+3+4+5 i take this input as string and convert it to integer array;
+	string str;
+	cin>>str;
+	int size = (str.length()/2)+1;
+	int arr[size] = {0};
+	int index = 0;
+	for(int i=0; i<str.length(); i++)
+	{
+		arr[index] =  (str[i] - 48);
+		index++;
+		i++;
+	}
+according to the given sample in array there will be 1 2 3 4 5 so according to this example the string with seperators can also be converted
+using this technique.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+4
+This is a text.
+Looks like it is.
+
+For each test case, print the English letters (case insensitive) sorted in descending order by the number of times they appeared in the text. 

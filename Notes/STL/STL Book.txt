@@ -1,0 +1,32 @@
+STL is Standard Template Library
+Containers
+they grow (and often shrink) dynamically, manage their own memory
+, keep track ofhow many objects they hold, bound the algorithmic complexity
+ of the operations they support, and much, much more. Their popularity is easy
+ to understand. They're simply better than their competition, regardless of whethe
+r that competition comes from containers in other libraries or is a container type 
+you'd write yourself. STL containers aren't just good. They're really good.
+
+it has standard sequence container: Vector, Deque, string and list
+it has standard associative containers: set, Multiset, map, multimap
+The nonstandard sequence containers slist and rope. slist is a singly linked list,
+and rope is essentially a heavy-duty string.
+The nonstandard associative containers hash_set, hash_multiset, hash_map, and hash_multimap.
+Several standard non-STL containers, including arrays, bitset, valarray, stack, queue, and priority_queue.
+
+Contiguous-memory containers (also known as array-based containers) store their elements in one or more (dynamically allocated) chunks of memory,
+ each chunk holding more than one container element. If a new element is inserted or an existing element is erased, other elements in the same memory
+ chunk have to be shifted up or down to make room for the new element or to fill the space formerly occupied by the erased element. This kind of
+ movement affects both performance (see Items 5 and 14) and exception safety (as we'll soon see). The standard contiguous-memory containers are vector,
+ string, and deque. The nonstandard rope is also a contiguous-memory container.
+Node-based containers store only a single element per chunk of (dynamically allocated) memory. Insertion or erasure of a container element affects only
+ pointers to nodes, not the contents of the nodes themselves, so element values need not be moved when something is inserted or erased. Containers representing
+ linked lists, such as list and slist, are node-based, as are all the standard associative containers.
+
+Iterator
+divided in 5 catagoreis based on the operation they support
+input and output iterators are modeled on reading and writing input and output stream once, most common manifestaion istream and ostream iterators
+Forward iterators have the capability of input and output, they can read and write a single location repeatidly, container for singlt linked list
+random access iterators has the ability to jump forward and backward in a single step, vector sting deque.
+
+any class that overload the function call operator is called fucntors.

@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://www.programiz.com/cpp-programming/library-function -->
+<html class="no-js js" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>C++ Standard Library | Programiz</title>
+  <link rel="shortcut icon" href="https://cdn.programiz.com/sites/tutorial2program/files/favicon.png">
+  <link type="text/css" rel="stylesheet" href="./C++ Standard Library _ Programiz_files/css__AJGhHCDTcBm7a7_Soy8IyvKEoulnolRVEfwlunVn6hs__zNKR9DvRBsUMb3Sse_-WFN_MFoMw0V2fAuMlgfmBBM4__StOR9Rqv5apLx0vizipBoybqX3TX7Rz44p21yHvMs3k.css" media="all">
+<link type="text/css" rel="stylesheet" href="./C++ Standard Library _ Programiz_files/css__Oi8_q6lalQNLDu24RZcduGgp7q_7ubt3UToG047m7gM__wkYLGmy5DWHjdtipfKB8RYNze_egHcUoSyVLDV62iYM__StOR9Rqv5apLx0vizipBoybqX3TX7Rz44p21yHvMs3k.css" media="all">
+
+  <!--[if IE]><![endif]-->
+<link rel="preconnect" href="https://cdn.programiz.com/">
+<link rel="dns-prefetch" href="https://cdn.programiz.com/">
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="preconnect" href="https://ajax.googleapis.com/">
+<link rel="preconnect" href="https://www.google-analytics.com/">
+<link rel="dns-prefetch" href="https://www.google-analytics.com/">
+<link rel="preconnect" href="https://stats.g.doubleclick.net/">
+<link rel="dns-prefetch" href="https://stats.g.doubleclick.net/">
+
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.programiz.com/">
+<!--[if IE 9]>
+<link rel="prefetch" href="//cdn.programiz.com" />
+<![endif]-->
+<meta name="description" content="The C++ standard library provides a large number of library functions (under different header files) for performing common tasks.">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="https://www.programiz.com/cpp-programming/library-function">
+<link rel="shortlink" href="https://www.programiz.com/cpp-programming/library-function">
+<script async="" src="./C++ Standard Library _ Programiz_files/apstag.js.download"></script><script type="text/javascript" src="./C++ Standard Library _ Programiz_files/saved_resource"></script><script async="" src="./C++ Standard Library _ Programiz_files/analytics.js.download"></script><script src="./C++ Standard Library _ Programiz_files/123000288571689" async=""></script><script async="" src="./C++ Standard Library _ Programiz_files/fbevents.js.download"></script><script src="./C++ Standard Library _ Programiz_files/stub.min.js.download"></script>
+<script async="" src="./C++ Standard Library _ Programiz_files/cmp.js.download"></script>
+<script type="text/javascript">
+    window.googletag = window.googletag || {};
+    window.googletag.cmd = window.googletag.cmd || [];
+    window.googletag.cmd.push(function () {
+        window.googletag.pubads().enableAsyncRendering();
+        window.googletag.pubads().disableInitialLoad();
+    });
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+</script>
+<script>
+    __tcfapi("addEventListener", 2, function (tcData, success) {
+        if (success && tcData.unicLoad === true) {
+            if (!window._initAds) {
+                window._initAds = true;
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = '//dsh7ky7308k4b.cloudfront.net/publishers/Programizcomnew.min.js';
+                document.head.appendChild(script);
+                var pathName = window.location.pathname;
+
+                if (pathName != "/" ||
+                    pathName != "/cpp-programming" |
+                    pathName != "/c-programming" ||
+                    pathName != "/cpp-programming" ||
+                    pathName != "/java-programming" ||
+                    pathName != "/python-programming" ||
+                    pathName != "/csharp-programming" ||
+                    pathName != "/swift-programming" ||
+                    pathName != "/kotlin-programming" ||
+                    pathName != "/dsa" ||
+                    pathName != "/csharp-programming") {
+                        script = document.createElement('script');
+                        script.async = true;
+                        script.src = '//dsh7ky7308k4b.cloudfront.net/smartview/Programizcom_inview.min.js';
+                        document.head.appendChild(script);
+                }
+
+                try {
+                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                        return true;
+                    }).catch(function (e) {
+                        if (document.getElementsByClassName("content-top-ad") !=  null && document.getElementsByClassName("content-top-ad").length > 0) {
+                            document.getElementsByClassName("content-top-ad")[0].style.display = "none";
+                        }
+                        var ad_elements = document.getElementsByClassName("pub-ad");
+                        while (ad_elements.length > 0) {
+                            ad_elements[0].parentNode.removeChild(ad_elements[0]);
+                        }
+
+                        if (document.getElementById("carbon-block") != null) {
+                            var carbonScript = document.createElement("script");
+                            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CKYDL27L&placement=wwwprogramizcom";
+                            carbonScript.id = "_carbonads_js";
+                            document.getElementById("carbon-block").appendChild(carbonScript);
+                        }
+                    });
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        }
+    });
+</script>
+<style>.pub-ad{z-index:0;clear:both;position:relative;text-align:center}.pub-ad::before{content:'ADVERTISEMENTS';display:block;position:absolute;top:-20px;left:0;right:0;height:20px;font-size:9px;line-height:20px;letter-spacing:1px;color:#bcbfc5}</style>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '123000288571689');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=123000288571689&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+  <script type="text/javascript" src="./C++ Standard Library _ Programiz_files/jquery.min.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="./C++ Standard Library _ Programiz_files/js__KJ-c7HPgkGI7uFwJ344YIXJgXpKxyI9UaekuVcy_1pg__4WMY46XaVDMsTrf9GwBu4QoyBxRtsOFooxYQXjIcIOc__StOR9Rqv5apLx0vizipBoybqX3TX7Rz44p21yHvMs3k.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var base_path = '/'; var module_path = 'sites/all/modules/programiz_rate_share';
+//--><!]]>
+</script>
+<script type="text/javascript" src="./C++ Standard Library _ Programiz_files/js__Zt1HIrR8qDvBSp7HQtSVKkzahCU8JN9lqLSMmpRFshE__nJ3hgKPHBAtdNdc6-MVperyDksO7DAWP8uin6LUggZ0__StOR9Rqv5apLx0vizipBoybqX3TX7Rz44p21yHvMs3k.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-36675496-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="./C++ Standard Library _ Programiz_files/js__D1iUecsrKsdjXQyFNZhCScqMIjki34JrWVtUPBOjUGI__GS11iCnxQlC5aQg3U3jHfDoFnQv5uUVcWLM9wRXPPCs__StOR9Rqv5apLx0vizipBoybqX3TX7Rz44p21yHvMs3k.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"programiz","theme_token":"fyCUiW0yWbVU_LlnvxDKCpmSvQeljn7XIb8pPB52gHg","jquery_version":"1.10","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/programiz\/lib\/highlightjs\/highlight.min.css":1,"sites\/all\/themes\/programiz\/lib\/mautic\/mautic.css":1,"sites\/all\/themes\/programiz\/dist\/main.css":1},"js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/programiz_rate_share\/programiz_rate_share.js":1,"sites\/all\/modules\/ctools\/js\/auto-submit.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/themes\/programiz\/dist\/main.min.js":1,"sites\/all\/themes\/programiz\/lib\/highlightjs\/highlight.min.js":1,"sites\/all\/themes\/programiz\/lib\/mautic\/mautic.js":1}},"urlIsAjaxTrusted":{"\/cpp-programming\/library-function":true,"\/views\/ajax":true},"better_exposed_filters":{"views":{"c_library_functions_homepage":{"displays":{"attachment_1":{"filters":{"search":{"required":false}}},"attachment_2":{"filters":{"search":{"required":false}}},"attachment_3":{"filters":{"search":{"required":false}}},"attachment_4":{"filters":{"search":{"required":false}}},"attachment_5":{"filters":{"search":{"required":false}}},"attachment_6":{"filters":{"search":{"required":false}}},"attachment_7":{"filters":{"search":{"required":false}}},"attachment_8":{"filters":{"search":{"required":false}}},"attachment_9":{"filters":{"search":{"required":false}}},"attachment_10":{"filters":{"search":{"required":false}}},"attachment_11":{"filters":{"search":{"required":false}}},"attachment_12":{"filters":{"search":{"required":false}}},"attachment_13":{"filters":{"search":{"required":false}}},"attachment_14":{"filters":{"search":{"required":false}}},"page":{"filters":{"search":{"required":false}}}}}}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:dd93986e8fb72beeb617e26f6729f030":{"view_name":"c_library_functions_homepage","view_display_id":"page","view_args":"","view_path":"cpp-programming\/library-function","view_base_path":"cpp-programming\/library-function","view_dom_id":"dd93986e8fb72beeb617e26f6729f030","pager_element":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="./C++ Standard Library _ Programiz_files/mautic-form.js.download"></script><script src="./C++ Standard Library _ Programiz_files/main.min.js.download"></script><style>.unic{-webkit-font-smoothing:antialiased;line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box;font-family:sans-serif}.unic main{display:block}.unic h1{font-size:2em;margin:.67em 0}.unic hr{box-sizing:content-box;height:0;overflow:visible}.unic pre{font-family:monospace,monospace;font-size:1em}.unic a{background-color:transparent}.unic abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}.unic b,.unic strong{font-weight:bolder}.unic code,.unic kbd,.unic samp{font-family:monospace,monospace;font-size:1em}.unic small{font-size:80%}.unic sub,.unic sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}.unic sub{bottom:-.25em}.unic sup{top:-.5em}.unic img{border-style:none}.unic button,.unic input,.unic optgroup,.unic select,.unic textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}.unic button,.unic input{overflow:visible}.unic button,.unic select{text-transform:none}.unic [type=button],.unic [type=reset],.unic [type=submit],.unic button{-webkit-appearance:button}.unic [type=button]::-moz-focus-inner,.unic [type=reset]::-moz-focus-inner,.unic [type=submit]::-moz-focus-inner,.unic button::-moz-focus-inner{border-style:none;padding:0}.unic [type=button]:-moz-focusring,.unic [type=reset]:-moz-focusring,.unic [type=submit]:-moz-focusring,.unic button:-moz-focusring{outline:1px dotted ButtonText}.unic fieldset{padding:.35em .75em .625em}.unic legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}.unic progress{vertical-align:baseline}.unic textarea{overflow:auto}.unic [type=checkbox],.unic [type=radio]{box-sizing:border-box;padding:0}.unic [type=number]::-webkit-inner-spin-button,.unic [type=number]::-webkit-outer-spin-button{height:auto}.unic [type=search]{-webkit-appearance:textfield;outline-offset:-2px}.unic [type=search]::-webkit-search-decoration{-webkit-appearance:none}.unic ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.unic details{display:block}.unic summary{display:list-item}.unic [hidden],.unic template{display:none}.unic *,.unic :after,.unic :before{box-sizing:inherit}.unic blockquote,.unic dd,.unic dl,.unic figure,.unic h1,.unic h2,.unic h3,.unic h4,.unic h5,.unic h6,.unic hr,.unic p,.unic pre{margin:0}.unic button{background:transparent;padding:0}.unic button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}.unic fieldset,.unic ol,.unic ul{margin:0;padding:0}.unic ol,.unic ul{list-style:none}.unic *{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;line-height:1.5;font-weight:400;height:auto}.unic *,.unic :after,.unic :before{border:0 solid #e2e8f0}.unic hr{border-top-width:1px}.unic img{border-style:solid}.unic textarea{resize:vertical}.unic input::-webkit-input-placeholder,.unic textarea::-webkit-input-placeholder{color:#a0aec0}.unic input::-moz-placeholder,.unic textarea::-moz-placeholder{color:#a0aec0}.unic input:-ms-input-placeholder,.unic textarea:-ms-input-placeholder{color:#a0aec0}.unic input::-ms-input-placeholder,.unic textarea::-ms-input-placeholder{color:#a0aec0}.unic input::placeholder,.unic textarea::placeholder{color:#a0aec0}.unic [role=button],.unic button{cursor:pointer}.unic table{border-collapse:collapse}.unic h1,.unic h2,.unic h3,.unic h4,.unic h5,.unic h6{font-size:inherit;font-weight:inherit}.unic a{color:inherit;text-decoration:inherit}.unic button,.unic input,.unic optgroup,.unic select,.unic textarea{padding:0;line-height:inherit;color:inherit}.unic code,.unic kbd,.unic pre,.unic samp{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.unic audio,.unic canvas,.unic embed,.unic iframe,.unic img,.unic object,.unic svg,.unic video{display:block;vertical-align:middle}.unic img,.unic video{max-width:100%;height:auto}.unic .container{width:100%}@media (min-width:640px){.unic .container{max-width:640px}}@media (min-width:768px){.unic .container{max-width:768px}}@media (min-width:1024px){.unic .container{max-width:1024px}}@media (min-width:1280px){.unic .container{max-width:1280px}}.unic .bg-white{background-color:#fff}.unic .bg-gray-200{background-color:#edf2f7}.unic .bg-gray-300{background-color:#e2e8f0}.unic .bg-gray-400,.unic .hover\:bg-gray-400:hover{background-color:#cbd5e0}.unic .hover\:bg-gray-600:hover{background-color:#718096}.unic .border-gray-300{border-color:#e2e8f0}.unic .rounded{border-radius:4px}.unic .rounded-full{border-radius:9999px}.unic .rounded-t-lg{border-top-left-radius:8px;border-top-right-radius:8px}.unic .rounded-b-lg{border-bottom-right-radius:8px;border-bottom-left-radius:8px}.unic .border-solid{border-style:solid}.unic .border{border-width:1px}.unic .border-t{border-top-width:1px}.unic .border-r{border-right-width:1px}.unic .border-b{border-bottom-width:1px}.unic .border-l{border-left-width:1px}.unic .cursor-pointer{cursor:pointer}.unic .block{display:block}.unic .inline{display:inline}.unic .flex{display:-webkit-box;display:flex}.unic .hidden{display:none}.unic .flex-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row}.unic .flex-col{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.unic .flex-wrap{flex-wrap:wrap}.unic .items-center{-webkit-box-align:center;align-items:center}.unic .justify-start{-webkit-box-pack:start;justify-content:flex-start}.unic .justify-center{-webkit-box-pack:center;justify-content:center}.unic .justify-between{-webkit-box-pack:justify;justify-content:space-between}.unic .flex-1{-webkit-box-flex:1;flex:1 1 0%}.unic .flex-auto{-webkit-box-flex:1;flex:1 1 auto}.unic .font-sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.unic .font-bold{font-weight:700}.unic .h-3{height:12px}.unic .h-4{height:16px}.unic .h-5{height:20px}.unic .h-32{height:128px}.unic .h-40{height:160px}.unic .h-64{height:256px}.unic .h-full{height:100%}.unic .m-2{margin:8px}.unic .m-auto{margin:auto}.unic .mx-0{margin-left:0;margin-right:0}.unic .mx-1{margin-left:4px;margin-right:4px}.unic .mx-2{margin-left:8px;margin-right:8px}.unic .mt-2{margin-top:8px}.unic .mb-2{margin-bottom:8px}.unic .ml-4{margin-left:16px}.unic .mt-auto{margin-top:auto}.unic .ml-auto{margin-left:auto}.unic .max-h-full{max-height:100%}.unic .object-scale-down{-o-object-fit:scale-down;object-fit:scale-down}.unic .outline-none{outline:0}.unic .overflow-scroll{overflow:scroll}.unic .overflow-x-hidden{overflow-x:hidden}.unic .p-1{padding:4px}.unic .p-2{padding:8px}.unic .p-4{padding:16px}.unic .p-6{padding:24px}.unic .py-1{padding-top:4px;padding-bottom:4px}.unic .py-2{padding-top:8px;padding-bottom:8px}.unic .px-2{padding-left:8px;padding-right:8px}.unic .px-4{padding-left:16px;padding-right:16px}.unic .pb-0{padding-bottom:0}.unic .pr-2{padding-right:8px}.unic .pb-2{padding-bottom:8px}.unic .pt-4{padding-top:16px}.unic .static{position:static}.unic .fixed{position:fixed}.unic .absolute{position:absolute}.unic .relative{position:relative}.unic .inset-y-0{top:0;bottom:0}.unic .top-0{top:0}.unic .right-0{right:0}.unic .bottom-0{bottom:0}.unic .left-0{left:0}.unic .shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.unic .shadow-md{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)}.unic .shadow-inner{box-shadow:inset 0 2px 4px 0 rgba(0,0,0,.06)}.unic .text-center{text-align:center}.unic .text-black{color:#000}.unic .text-gray-700{color:#4a5568}.unic .text-gray-800{color:#2d3748}.unic .hover\:text-white:hover{color:#fff}.unic .text-xs{font-size:12px}.unic .text-sm{font-size:14px}.unic .text-lg{font-size:18px}.unic .text-xl{font-size:20px}.unic .underline{text-decoration:underline}.unic .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.unic .align-middle{vertical-align:middle}.unic .w-5{width:20px}.unic .w-10{width:40px}.unic .w-32{width:128px}.unic .w-1\/3{width:33.333333%}.unic .w-full{width:100%}.unic .z-40{z-index:40}.unic .z-50{z-index:50}@media (min-width:768px){.unic .md\:flex-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row}.unic .md\:flex-1{-webkit-box-flex:1;flex:1 1 0%}.unic .md\:h-64{height:256px}.unic .md\:h-auto{height:auto}.unic .md\:mx-2{margin-left:8px;margin-right:8px}.unic .md\:mx-3{margin-left:12px;margin-right:12px}.unic .md\:max-w-2xl{max-width:672px}.unic .md\:pl-4{padding-left:16px}.unic .md\:text-base{font-size:16px}.unic .md\:text-xl{font-size:20px}.unic .md\:w-1\/2{width:50%}.unic .md\:w-1\/4{width:25%}}div.unic ::-webkit-scrollbar{display:none}.unic,.unic li,.unic p{font-size:14px;color:rgba(0,0,0,.76);-ms-overflow-style:none;overflow:auto}.unic .h24{height:24px}.unic label{width:auto}.unic .svg{height:100%}.unic .logo,.unic .uniclogo{max-height:40px}.unic .unic-mh{max-height:30vh}.unic :focus{outline:thin dotted}.unic-bg{background-color:hsla(0,.5%,41%,.75)}.unic .toggle__dot{top:-4px;left:-4px;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.unic input:checked~.toggle__dot{-webkit-transform:translateX(120%);transform:translateX(120%);background-color:#48bb78!important}#uniccmp{z-index:2147483639}#uniccmp-badge,.unic-badge{z-index:2147483638}.unic-badge{width:30px;height:30px;padding:5px;display:block;outline:none;position:fixed;left:10px;bottom:10px;border-radius:2px;border-radius:4px;background-image:linear-gradient(37deg,#c7c7c7,#e0e0e0);cursor:pointer}</style><script async="" src="./C++ Standard Library _ Programiz_files/Programizcomnew.min.js.download"></script><script async="" src="./C++ Standard Library _ Programiz_files/Programizcom_inview.min.js.download"></script><script src="./C++ Standard Library _ Programiz_files/Programizcom_G_Top8SSPs.min.js.download" async=""></script><script src="./C++ Standard Library _ Programiz_files/bundle.v2.min.js.download"></script><script src="./C++ Standard Library _ Programiz_files/gpt.js.download" async=""></script><meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./C++ Standard Library _ Programiz_files/pubads_impl_2021040101.js.download" async=""></script></head>
+
+<body style=""><div id="uniccmp" data-nosnippet=""></div>
+    
+<main class="fixed-nav has-notice-bar-top">
+  <header class="main-nav d-flex flex-column justify-content-center main-nav--fixed">
+            
+    
+    
+    
+    <div class="notice-bar-top d-none d-md-block">
+  <div class="container">
+    <div class="notice-bar-top__message-wrapper">
+      <span class="tag-border-less tag-border-less--orange">NEW</span>
+      <p class="notice-bar-top__message">
+        <!--<a class="notice-bar-top__message--link" href="/learn-python/programiz-challenge" title="Programiz Pro is here!" target="_blank">Solve Python challenge and get a chance to win a free 1 year subscription of Programiz Pro. Learn more <svg class="programiz-icon notice-bar-top__message__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-right"></use></svg></a>-->
+        <a class="notice-bar-top__message--link" href="https://www.youtube.com/c/Programiz-studios" title="Python Basics Video Course now on Youtube! Watch Now." rel="noopener" target="_blank">Python Basics Video Course now on Youtube! Watch Now. <svg class="programiz-icon notice-bar-top__message__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-right"></use></svg></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+        
+    <nav>
+      <div class="container flex-1">
+        <div class="d-flex align-items-center p-relative">
+          <button class="main-nav__menu-btn d-lg-none d-flex">
+            <svg class="programiz-icon">
+              <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#menu"></use>
+            </svg>
+          </button>
+
+          <div class="brand">
+            <a href="https://www.programiz.com/" title="Programiz">
+              <img class="d-lg-none" src="./C++ Standard Library _ Programiz_files/sp_logo.svg" width="28" height="28" alt="Programiz">
+              <img class="d-none d-lg-block" src="./C++ Standard Library _ Programiz_files/pc_logo.svg" width="84" height="28" alt="Programiz">
+            </a>
+          </div>
+
+                      <div class="navigation d-none d-lg-flex align-items-center">
+                
+    
+    
+    
+    <a title="Programming Tutorials" href="https://www.programiz.com/cpp-programming/library-function#" class="navigation__node">
+  <span class="navigation__node__label">
+    Tutorials
+  </span>
+  <svg class="programiz-icon programiz-icon--smallest navigation__node__icon">
+    <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-down"></use>
+  </svg>
+</a>
+
+<a title="Programming Examples" href="javascript:void(0);" class="navigation__node">
+  <span class="navigation__node__label">
+    Examples
+  </span>
+  <svg class="programiz-icon programiz-icon--smallest navigation__node__icon">
+    <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-down"></use>
+  </svg>
+</a>
+
+                </div>
+          
+                        
+    
+    
+    
+    <form action="https://www.programiz.com/cpp-programming/library-function" method="post" id="search-api-page-search-form-simplest-programming-tutorials-f" accept-charset="UTF-8"><div><div class="search-input search-api-page-search-form-simplest-programming-tutorials-f"><button type="submit" class="search-input__form-submit" hidden=""></button><button type="\&quot;button\&quot;" class="search-input__clear btn"><svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button><button type="\&quot;button\&quot;" class="btn btn--clear c-default"><svg class="programiz-icon programiz-icon--small search-input__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#search"></use></svg></button><input type="text" value="" placeholder="Search tutorials and examples" id="edit-keys-2" name="keys_2" class="search-input__control" autocomplete="off"><input type="hidden" name="id" value="2"><input type="hidden" name="form_build_id" value="form-g3JryEYiZlRB2NvgPoaBPWsfFwufEA38UDJZKWQ24rc"><input type="hidden" name="form_id" value="search_api_page_search_form_simplest_programming_tutorials_f"></div></div></form>
+              
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Tutorials and Examples contents -->
+  <div class="sub-menu--backdrop"></div>
+        
+    
+    
+    
+    
+<!-- Mobile view -->
+<div class="sub-menu sub-menu--sp sub-menu--sp--tutorial-examples">
+  <div class="sub-menu__wrap">
+    <div class="sub-menu__head">
+      <div class="sub-menu__tab">
+        <div class="sub-menu__tab__head">
+          <button class="sub-menu__tab__node sub-menu__tab__node--index d-none">
+            <!-- Change the title dynamically -->
+            Course Index
+          </button>
+          <button class="sub-menu__tab__node sub-menu__tab__node--explore">
+            Explore Programiz
+          </button>
+        </div>
+        <div class="sub-menu__tab__body sub-menu__tab__body--index d-none"></div>
+        <div class="sub-menu__tab__body sub-menu__tab__body--explore">
+                      <a href="javascript:void(0);" title="Python" class="sub-menu__tab__list-node " data-language="python">Python</a>
+                      <a href="javascript:void(0);" title="JavaScript" class="sub-menu__tab__list-node " data-language="javascript">JavaScript</a>
+                      <a href="javascript:void(0);" title="C" class="sub-menu__tab__list-node " data-language="c">C</a>
+                      <a href="javascript:void(0);" title="C++" class="sub-menu__tab__list-node sub-menu__tab__list-node--active" data-language="cpp">C++</a>
+                      <a href="javascript:void(0);" title="Java" class="sub-menu__tab__list-node " data-language="java">Java</a>
+                      <a href="javascript:void(0);" title="Kotlin" class="sub-menu__tab__list-node " data-language="kotlin">Kotlin</a>
+                      <a href="javascript:void(0);" title="Swift" class="sub-menu__tab__list-node " data-language="swift">Swift</a>
+                      <a href="javascript:void(0);" title="C#" class="sub-menu__tab__list-node " data-language="csharp">C#</a>
+                      <a href="javascript:void(0);" title="DSA" class="sub-menu__tab__list-node " data-language="dsa">DSA</a>
+                  </div>
+      </div>
+
+      <button class="btn btn--skeleton menu-hide-trigger">
+        <svg class="programiz-icon">
+          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="tabbed-content tabbed-content--no-border">
+      <div class="tabbed-content__right tabbed-content__right--index d-none">
+        <!-- Load contents dynamically -->
+      </div>
+      <div class="tabbed-content__right tabbed-content__right--explore">
+        <div class="sub-menu__contents sub-menu__contents--cpp" id="m-cpp">
+          <div class="sub-menu__cta">
+                        <a href="https://www.programiz.com/cpp-programming" title="C++ Tutorials" class="btn btn--primary btn--xlarge d-flex align-items-center mr-6x-sm mb-5x mb-0x-md">
+              <span for="" class="btn__label">Start Learning C++</span>
+              <svg class="programiz-icon ml-2x">
+                <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            
+                        <a href="https://www.programiz.com/cpp-programming/examples" title="C++ Examples" class="btn btn--primary btn--xlarge d-flex align-items-center mb-5x mb-0x-md">
+              <span for="" class="btn__label">Explore C++ Examples</span>
+              <svg class="programiz-icon ml-2x">
+                <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+                      </div>
+
+          <div class="sub-menu__links">
+            <!-- Popular tutorials -->
+                          <div class="sub-menu__links__column sub-menu__links__column--left">
+                <h4 class="sub-menu__links__column__title">Popular Tutorials</h4>
+                <div class="sub-menu__link">
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="C++ if...else Statement" href="https://www.programiz.com/cpp-programming/if-else" class="sub-menu__link__column">C++ if...else Statement</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="C++ for Loop" href="https://www.programiz.com/cpp-programming/for-loop" class="sub-menu__link__column">C++ for Loop</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Arrays in C++" href="https://www.programiz.com/cpp-programming/arrays" class="sub-menu__link__column">Arrays in C++</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Strings in C++" href="https://www.programiz.com/cpp-programming/strings" class="sub-menu__link__column">Strings in C++</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="C++ Class &amp; Objects" href="https://www.programiz.com/cpp-programming/object-class" class="sub-menu__link__column">C++ Class &amp; Objects</a>
+                      </div>
+                    </div>
+                                  </div>
+              </div>
+            
+            <!-- Popular examples -->
+                          <div class="sub-menu__links__column sub-menu__links__column--left">
+                <h4 class="sub-menu__links__column__title">Popular Examples</h4>
+                <div class="sub-menu__link">
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Create a simple calculator" href="https://www.programiz.com/cpp-programming/examples/calculator-switch-case" class="sub-menu__link__column">Create a simple calculator</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Check prime number" href="https://www.programiz.com/cpp-programming/examples/prime-number" class="sub-menu__link__column">Check prime number</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Print the Fibonacci sequence" href="https://www.programiz.com/cpp-programming/examples/fibonacci-series" class="sub-menu__link__column">Print the Fibonacci sequence</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Check if a number is palindrome or not" href="https://www.programiz.com/cpp-programming/examples/palindrome-number" class="sub-menu__link__column">Check if a number is palindrome or not</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Program to multiply matrix" href="https://www.programiz.com/cpp-programming/examples/matrix-multiplication" class="sub-menu__link__column">Program to multiply matrix</a>
+                      </div>
+                    </div>
+                                  </div>
+              </div>
+            
+            <!-- Reference materials -->
+                          <div class="sub-menu__links__column sub-menu__links__column--right">
+                <h4 class="sub-menu__links__column__title">Reference Materials</h4>
+                <div class="sub-menu__link">
+                                      <div class="sub-menu__link__row">
+                      <a href="https://www.programiz.com/cpp-programming/library-function/iostream" title="iostream" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        iostream                        <svg class="programiz-icon programiz-icon--small ml-auto">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <a href="https://www.programiz.com/cpp-programming/library-function/cmath" title="cmath" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        cmath                        <svg class="programiz-icon programiz-icon--small ml-auto">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <a href="https://www.programiz.com/cpp-programming/library-function/cstring" title="cstring" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        cstring                        <svg class="programiz-icon programiz-icon--small ml-auto">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <a href="https://www.programiz.com/cpp-programming/library-function/ctime" title="ctime" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        ctime                        <svg class="programiz-icon programiz-icon--small ml-auto">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  
+                  <a title="C++ References" href="https://www.programiz.com/cpp-programming/library-function" class="d-flex align-items-center font-weight-500">
+                    View all
+                    <svg class="programiz-icon programiz-icon--small ml-2x">
+                      <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desktop view -->
+<div class="sub-menu sub-menu--pc sub-menu--pc--tutorial">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+        <div class="sub-menu__wrap">
+          <div class="tabbed-content tabbed-content--no-border">
+            <div class="tabbed-content__left tabbed-content__left--small">
+              <div class="tabbed-link-container">
+                                  <div class="tabbed-link">
+                    <a title="Python" href="javascript:void(0);" class="tabbed-link__node " data-language="python">
+                      Python                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="JavaScript" href="javascript:void(0);" class="tabbed-link__node " data-language="javascript">
+                      JavaScript                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C" href="javascript:void(0);" class="tabbed-link__node " data-language="c">
+                      C                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C++" href="javascript:void(0);" class="tabbed-link__node tabbed-link__node--active" data-language="cpp">
+                      C++                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Java" href="javascript:void(0);" class="tabbed-link__node " data-language="java">
+                      Java                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Kotlin" href="javascript:void(0);" class="tabbed-link__node " data-language="kotlin">
+                      Kotlin                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Swift" href="javascript:void(0);" class="tabbed-link__node " data-language="swift">
+                      Swift                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C#" href="javascript:void(0);" class="tabbed-link__node " data-language="csharp">
+                      C#                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="DSA" href="javascript:void(0);" class="tabbed-link__node " data-language="dsa">
+                      DSA                    </a>
+                  </div>
+                              </div>
+            </div>
+            <div class="tabbed-content__right">
+              <div class="sub-menu__contents sub-menu__contents--cpp" id="t-cpp">
+                <div class="sub-menu__cta">
+                  <a class="btn btn--primary btn--xlarge d-flex align-items-center" title="C++ Tutorials" href="https://www.programiz.com/cpp-programming">
+                    <span for="" class="btn__label">Start Learning C++</span>
+                    <svg class="programiz-icon ml-2x">
+                      <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                  <button class="btn btn--skeleton ml-auto">
+                    <svg class="programiz-icon">
+                      <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="sub-menu__links">
+                  <!-- Popular tutorials -->
+                                      <div class="sub-menu__links__column sub-menu__links__column--left">
+                      <h4 class="sub-menu__links__column__title">Popular Tutorials</h4>
+                      <div class="sub-menu__link">
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="C++ if...else Statement" href="https://www.programiz.com/cpp-programming/if-else" class="sub-menu__link__column">C++ if...else Statement</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="C++ for Loop" href="https://www.programiz.com/cpp-programming/for-loop" class="sub-menu__link__column">C++ for Loop</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="Arrays in C++" href="https://www.programiz.com/cpp-programming/arrays" class="sub-menu__link__column">Arrays in C++</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="Strings in C++" href="https://www.programiz.com/cpp-programming/strings" class="sub-menu__link__column">Strings in C++</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="C++ Class &amp; Objects" href="https://www.programiz.com/cpp-programming/object-class" class="sub-menu__link__column">C++ Class &amp; Objects</a>
+                            </div>
+                          </div>
+                                              </div>
+                      <a title="C++ tutorials" href="https://www.programiz.com/cpp-programming" class="d-flex align-items-center font-weight-500">
+                        View all tutorials
+                        <svg class="programiz-icon programiz-icon--small ml-2x">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  
+                  <!-- Reference materials -->
+                                      <div class="sub-menu__links__column sub-menu__links__column--right">
+                      <h4 class="sub-menu__links__column__title">Reference Materials</h4>
+                      <div class="sub-menu__link">
+                        
+                                                  <div class="sub-menu__link__row">
+                            <a title="iostream" href="https://www.programiz.com/cpp-programming/library-function/iostream" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              iostream                              <svg class="programiz-icon programiz-icon--small ml-auto">
+                                <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                              </svg>
+                            </a>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <a title="cmath" href="https://www.programiz.com/cpp-programming/library-function/cmath" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              cmath                              <svg class="programiz-icon programiz-icon--small ml-auto">
+                                <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                              </svg>
+                            </a>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <a title="cstring" href="https://www.programiz.com/cpp-programming/library-function/cstring" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              cstring                              <svg class="programiz-icon programiz-icon--small ml-auto">
+                                <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                              </svg>
+                            </a>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <a title="ctime" href="https://www.programiz.com/cpp-programming/library-function/ctime" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              ctime                              <svg class="programiz-icon programiz-icon--small ml-auto">
+                                <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                              </svg>
+                            </a>
+                          </div>
+                                              </div>
+                      <a title="C++ References" href="https://www.programiz.com/cpp-programming/library-function" class="d-flex align-items-center font-weight-500">
+                        View all
+                        <svg class="programiz-icon programiz-icon--small ml-2x">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+        
+    
+    
+    
+    
+<!-- Desktop view only -->
+<div class="sub-menu sub-menu--pc sub-menu--pc--examples">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+        <div class="sub-menu__wrap">
+          <div class="tabbed-content tabbed-content--no-border">
+            <div class="tabbed-content__left tabbed-content__left--small">
+
+              <div class="tabbed-link-container">
+                                  <div class="tabbed-link">
+                    <a title="Python" href="javascript:void(0);" class="tabbed-link__node " data-language="python">Python</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="JavaScript" href="javascript:void(0);" class="tabbed-link__node " data-language="javascript">JavaScript</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C" href="javascript:void(0);" class="tabbed-link__node " data-language="c">C</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C++" href="javascript:void(0);" class="tabbed-link__node tabbed-link__node--active" data-language="cpp">C++</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Java" href="javascript:void(0);" class="tabbed-link__node " data-language="java">Java</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Kotlin" href="javascript:void(0);" class="tabbed-link__node " data-language="kotlin">Kotlin</a>
+                  </div>
+                              </div>
+
+            </div>
+            <div class="tabbed-content__right">
+              <div class="sub-menu__contents sub-menu__contents--cpp" id="examples-cpp">
+                <div class="sub-menu__cta">
+                  <a href="https://www.programiz.com/cpp-programming/examples" title="C++ Examples" class="btn btn--primary btn--xlarge d-flex align-items-center">
+                    <span for="" class="btn__label">Explore C++ Examples</span>
+                    <svg class="programiz-icon ml-2x">
+                      <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                  <button class="btn btn--skeleton ml-auto">
+                    <svg class="programiz-icon">
+                      <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="sub-menu__links">
+                  <div class="sub-menu__links__column sub-menu__links__column--left">
+                    <h4 class="sub-menu__links__column__title">Popular Examples</h4>
+                    <div class="sub-menu__link">
+                                            <div class="sub-menu__link__row">
+                        <div class="sub-menu__link__column">
+                          <a title="Create a simple calculator" href="https://www.programiz.com/cpp-programming/examples/calculator-switch-case" class="sub-menu__link__column">Create a simple calculator</a>
+                        </div>
+                      </div>
+                                            <div class="sub-menu__link__row">
+                        <div class="sub-menu__link__column">
+                          <a title="Check prime number" href="https://www.programiz.com/cpp-programming/examples/prime-number" class="sub-menu__link__column">Check prime number</a>
+                        </div>
+                      </div>
+                                            <div class="sub-menu__link__row">
+                        <div class="sub-menu__link__column">
+                          <a title="Print the Fibonacci sequence" href="https://www.programiz.com/cpp-programming/examples/fibonacci-series" class="sub-menu__link__column">Print the Fibonacci sequence</a>
+                        </div>
+                      </div>
+                                            <div class="sub-menu__link__row">
+                        <div class="sub-menu__link__column">
+                          <a title="Check if a number is palindrome or not" href="https://www.programiz.com/cpp-programming/examples/palindrome-number" class="sub-menu__link__column">Check if a number is palindrome or not</a>
+                        </div>
+                      </div>
+                                            <div class="sub-menu__link__row">
+                        <div class="sub-menu__link__column">
+                          <a title="Program to multiply matrix" href="https://www.programiz.com/cpp-programming/examples/matrix-multiplication" class="sub-menu__link__column">Program to multiply matrix</a>
+                        </div>
+                      </div>
+                                          </div>
+                    <a title="C++ Examples" href="https://www.programiz.com/cpp-programming/examples" class="d-flex align-items-center font-weight-500">
+                      View all examples
+                      <svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+  <!-- Get app link -->
+        
+  
+        
+    
+    
+    
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-page attachment-page-views view-dom-id-dd93986e8fb72beeb617e26f6729f030 jquery-once-1-processed">
+
+            <div class="top-banner top-banner--reference">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-section">
+<a href="https://www.programiz.com/cpp-programming">
+                                                    <div class="title-section__image">
+                                <p><img alt="Python Logo Programiz" class="title-section__icon" src="./C++ Standard Library _ Programiz_files/c++.svg" title="C++"></p>
+                            </div>
+</a>
+                                                <div class="title-section__detail-container">
+                                                            <h1 class="title-section__title">C++ Standard Library</h1>                            
+                                                            <div class="nav-tab d-none d-md-flex">
+                    <a title="C++ Tutorials" href="https://www.programiz.com/cpp-programming" class="nav-tab__node">
+                      <svg class="programiz-icon nav-tab__icon">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#book"></use>
+                      </svg>
+                      Tutorials
+                    </a>
+                    <a title="C++ Examples" href="https://www.programiz.com/cpp-programming/examples" class="nav-tab__node">
+                      <svg class="programiz-icon nav-tab__icon">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#align-left"></use>
+                      </svg>
+                      Examples
+                    </a>
+                    <a title="C++ Standard Library" href="https://www.programiz.com/cpp-programming/library-function" class="nav-tab__node nav-tab__node--active">
+                      <svg class="programiz-icon nav-tab__icon">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#box"></use>
+                      </svg>
+                      References
+                    </a>
+                  </div>                                                    </div>
+                    </div>
+
+<div class="nav-tab nav-tab--sp d-md-none">
+    <a title="C++ Tutorials" href="https://www.programiz.com/cpp-programming" class="nav-tab__node">
+        Tutorials
+    </a>
+    <a title="C++ Examples" href="https://www.programiz.com/cpp-programming/examples" class="nav-tab__node">
+        Examples
+    </a>
+    <a title="C++ Standard Library" href="https://www.programiz.com/cpp-programming/library-function" class="nav-tab__node nav-tab__node--active">
+        References
+    </a>
+</div>                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 top-banner__form">
+                    <div class="container">
+                                                    <form class="ctools-auto-submit-full-form ctools-auto-submit-processed jquery-once-1-processed" action="https://www.programiz.com/cpp-programming/library-function" method="get" id="views-exposed-form-c-library-functions-homepage-page" accept-charset="UTF-8"><div>
+    <div class="grouped-form">
+
+        <div class="grouped-form__select">
+            <label>C++ Library Functions</label>
+        </div>
+        <div class="grouped-form__input">
+            <input placeholder="Search ..." type="text" class="grouped-form__input__control ctools-auto-submit-processed" id="edit-title" name="search" value="">
+            <button type="submit" id="edit-submit-c-library-functions-homepage" class="grouped-form__input__btn">
+                <svg class="programiz-icon programiz-icon--large">
+                    <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#search"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div></form>                                            </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="contents contents--reference">
+        <!-- ads -->
+                    <!-- Ad here -->
+            <!-- <div class="d-flex justify-content-center pb-10x">
+                <div style="min-width: 300px; display: block; background: grey; height: 90px; color: white;">Ad
+                </div>
+            </div> -->
+        
+        
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_1 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cmath" title="C++ &lt;cmath&gt;">C++ &lt;cmath&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/cos">C++ cos()</a></h3>    
+          Returns Cosine of the Argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/sin">C++ sin()</a></h3>    
+          Returns Sine of the Argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/asin">C++ asin()</a></h3>    
+          Returns Inverse Sine a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/atan">C++ atan()</a></h3>    
+          Returns Inverse tangent a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/tan">C++ tan()</a></h3>    
+          Returns Tangent of the Argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/atan2">C++ atan2()</a></h3>    
+          Returns Inverse Tangent of a Coordinate    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/acos">C++ acos()</a></h3>    
+          Returns Inverse cosine a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/ceil">C++ ceil()</a></h3>    
+          Return ceiling value of number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/sinh">C++ sinh()</a></h3>    
+          returns hyperbolic sine of an angle    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/acosh">C++ acosh()</a></h3>    
+          returns hyperbolic cosine of a number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/asinh">C++ asinh()</a></h3>    
+          returns arc hyperbolic sine of a number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/floor">C++ floor()</a></h3>    
+          Returns floor value of decimal number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/tanh">C++ tanh()</a></h3>    
+          returns hyperbolic tangent of an angle    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/fmod">C++ fmod()</a></h3>    
+          Computes floating point remainder of division    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/atanh">C++ atanh()</a></h3>    
+          returns arc hyperbolic tangent of a number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/log">C++ log()</a></h3>    
+          Returns Natural Logarithm of a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/round">C++ round()</a></h3>    
+          Returns integral value nearest to argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/lround">C++ lround()</a></h3>    
+          Returns the long int value nearest to the argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/trunc">C++ trunc()</a></h3>    
+          Truncates the demical part of a number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/llround">C++ llround()</a></h3>    
+          Rounds argument to nearest long long int value    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/rint">C++ rint()</a></h3>    
+          Rounds argument using current rounding mode    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/lrint">C++ lrint()</a></h3>    
+          Rounds argument using current rounding mode    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/log10">C++ log10()</a></h3>    
+          Returns Base 10 Logarithm of a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/modf">C++ modf()</a></h3>    
+          Breaks Number Into Integral and Fractional Part    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/exp">C++ exp()</a></h3>    
+          returns exponential (e) raised to a number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/exp2">C++ exp2()</a></h3>    
+          Returns 2 raised to a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/ilogb">C++ ilogb()</a></h3>    
+          returns integral part of logarithm of |x|    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/frexp">C++ frexp()</a></h3>    
+          breaks float to its binary significand    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/scalbn">C++ scalbn()</a></h3>    
+          Scales x by FLT_RADIX to the power n    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/ldexp">C++ ldexp()</a></h3>    
+          returns product of x and 2 raised to the power e    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/expm1">C++ expm1() </a></h3>    
+          Returns e raised to Power  Minus 1    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/nearbyint">C++ nearbyint()</a></h3>    
+          Rounds argument to using current rounding mode    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/logb">C++ logb()</a></h3>    
+          returns logarithm of |x|    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/log2">C++ log2()</a></h3>    
+          returns base2 logarithm of a number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/scalbln">C++ scalbln()</a></h3>    
+          Scales x by FLT_RADIX to the power n    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/log1p">C++ log1p()</a></h3>    
+          returns natural logarithm of x+1.    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/remquo">C++ remquo()</a></h3>    
+          Computer remainder and stores quotient of x/y    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/sqrt">C++ sqrt()</a></h3>    
+          Computes Square Root of A Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/cbrt">C++ cbrt()</a></h3>    
+          Computes Cube Root of a Number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/nexttoward">C++ nexttoward()</a></h3>    
+          returns next value after x in direction of y    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/hypot">C++ hypot()</a></h3>    
+          Returns Square Root of sum of square of Arguments    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/fmax">C++ fmax()</a></h3>    
+          returns largest among two arguments passed    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/nextafter">C++ nextafter()</a></h3>    
+          returns next value after x in direction of y    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/fdim">C++ fdim()</a></h3>    
+          Returns Positive Different Between Arguments    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/cosh">C++ cosh()</a></h3>    
+          Returns Hyperbolic Cosine of an Angle    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/fabs">C++ fabs()</a></h3>    
+          returns absolute value of argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/nan">C++ nan()</a></h3>    
+          returns a quiet NaN value    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/abs">C++ cmath abs()</a></h3>    
+          returns absolute value of an argument    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/fma">C++ fma()</a></h3>    
+          Returns Fused Multiply–Accumulate    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/fmin">C++ fmin()</a></h3>    
+          returns smallest among two given arguments    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/copysign">C++ copysign()</a></h3>    
+          returns num with value of first and sign of second    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/remainder">C++ remainder()</a></h3>    
+          Returns remainder of x/y    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/llrint">C++ llrint()</a></h3>    
+          Rounds argument using current rounding mode    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cmath/pow">C++ pow()</a></h3>    
+          Computes Power a Number    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_2 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cstdlib" title="C++ &lt;cstdlib&gt;">C++ &lt;cstdlib&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/strtod">C++ strtod()</a></h3>    
+          returns string float to double    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/atof">C++ atof()</a></h3>    
+          Converts String to Double    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/strtol">C++ strtol()</a></h3>    
+          Converts a string to number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/atol">C++ atol()</a></h3>    
+          Converts String to Integer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/strtoll">C++ strtoll()</a></h3>    
+          converts string to long long int in C++    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/strtoull">C++ strtoull()</a></h3>    
+          converts string to unsigned long long int    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/realloc">C++ realloc()</a></h3>    
+          reallocates a block of previously allocated memory    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/srand">C++ srand()</a></h3>    
+          seeds pseudo random number for rand()    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/free">C++ free()</a></h3>    
+          deallocates a block of memory    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/malloc">C++ malloc()</a></h3>    
+          allocates a block of unitialized memory    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/atexit">C++ atexit()</a></h3>    
+          registers function to be called on termination    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/at-quick-exit">C++ at_quick_exit()</a></h3>    
+          registers function and calls on quick termination    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/getenv">C++ getenv()</a></h3>    
+          returns pointer to environment variable passed    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/quick-exit">C++ quick_exit()</a></h3>    
+          causes termination without cleaning resources    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/exit">C++ _Exit()</a></h3>    
+          causes termination without cleanup tasks    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/bsearch">C++ bsearch()</a></h3>    
+          performs binary search on sorted array    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/qsort">C++ qsort()</a></h3>    
+          sorts array using quick-sort algorithm    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/abs">C++ cstdlib abs()</a></h3>    
+          returns absolute value of an integer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/div">C++ div()</a></h3>    
+          computes integral quotient and remainder of number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/lldiv">C++ lldiv()</a></h3>    
+          computes integral division of two long long int.    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/labs">C++ labs()</a></h3>    
+          returns absolute value of long or long int number    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/ldiv">C++ ldiv()</a></h3>    
+          computes integral division of long int numbers    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/llabs">C++ llabs()</a></h3>    
+          returns absolute value of a long long int data    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/mblen">C++ mblen()</a></h3>    
+          determines size of a multibyte character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/mbtowc">C++ mbtowc()</a></h3>    
+          converts multibyte character to a wide character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/wctomb">C++ wctomb()</a></h3>    
+          converts wide character to a multibyte character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/wcstombs">C++ wcstombs()</a></h3>    
+          converts wide character string to multibyte seq    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/mbstowcs">C++ mbstowcs()</a></h3>    
+          converts multibyte char string to wide char seq    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/calloc">C++ calloc()</a></h3>    
+          allocates block of memory and initializes to zero    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_3 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/iostream" title="C++ &lt;iostream&gt;">C++ &lt;iostream&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/cin">C++ cin</a></h3>    
+          accepts input from user    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/cout">C++ cout</a></h3>    
+          displays output to output device i.e monitor    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/cerr">C++ cerr</a></h3>    
+          writes to error stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/clog">C++ clog</a></h3>    
+          used for streaming logs    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/wcin">C++ wcin</a></h3>    
+          accepts input in wide character type    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/wcout">C++ wcout</a></h3>    
+          displays wide characters (Unicode) to screen    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/wcerr">C++ wcerr</a></h3>    
+          prints to error stream as wide character type    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/iostream/wclog">C++ wclog</a></h3>    
+          writes to log stream with wide character    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_4 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cstring" title="C++ &lt;cstring&gt;">C++ &lt;cstring&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/memcpy">C++ memcpy()</a></h3>    
+          copies block of memory from source to destination    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strcat">C++ strcat()</a></h3>    
+          appends copy of string to end of another string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/memmove">C++ memmove()</a></h3>    
+          copies memory even if there is overlapping blocks    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strcpy">C++ strcpy()</a></h3>    
+          copies character string from source to destination    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strncpy">C++ strncpy()</a></h3>    
+          copies character string from source to destination    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strncat">C++ strncat()</a></h3>    
+          appends string to end of another string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/memcmp">C++ memcmp()</a></h3>    
+          compares two pointer objects    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strcmp">C++ strcmp()</a></h3>    
+          compare two strings    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strncmp">C++ strncmp()</a></h3>    
+          compares two strings lexographically    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/memchr">C++ memchr()</a></h3>    
+          searches for character in string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strchr">C++ strchr()</a></h3>    
+          searches for character in string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strrchr">C++ strrchr()</a></h3>    
+          searches last occurence of a character in string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strspn">C++ strspn()</a></h3>    
+          gives length of maximum initial segment     
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strcspn">C++ strcspn()</a></h3>    
+          searches a string for characters in another string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strpbrk">C++ strpbrk()</a></h3>    
+          search characters in one string in another string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strstr">C++ strstr()</a></h3>    
+          finds first occurrence of a substring in string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strtok">C++ strtok()</a></h3>    
+          split string based on delimiter    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/memset">C++ memset()</a></h3>    
+          copies character to beginning of string n times    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strerror">C++ strerror()</a></h3>    
+          gives description of system error code    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strlen">C++ strlen()</a></h3>    
+          returns length of given string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strcoll">C++ strcoll()</a></h3>    
+          compares two null terminated string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstring/strxfrm">C++ strxfrm()</a></h3>    
+          transform byte string into implementation def form    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_5 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cctype" title="C++ &lt;cctype&gt;">C++ &lt;cctype&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isalpha">C++ isalpha()</a></h3>    
+          checks if given character is alphabet or not    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isblank">C++ isblank()</a></h3>    
+          checks if given character is a blank character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/iscntrl">C++ iscntrl()</a></h3>    
+          checks if given character is control character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isdigit">C++ isdigit()</a></h3>    
+          checks if given character is a digit or not    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isgraph">C++ isgraph()</a></h3>    
+          checks if given character is graphic or not    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/islower">C++ islower()</a></h3>    
+          checks if given character is lowercase    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isupper">C++ isupper()</a></h3>    
+          check if given character is uppercase or not    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isprint">C++ isprint()</a></h3>    
+          check if given character is printable or not    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/ispunct">C++ ispunct()</a></h3>    
+          check if given character is punctuation character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isspace">C++ isspace()</a></h3>    
+          check if given character is whitespace character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/isxdigit">C++ isxdigit()</a></h3>    
+          checks if given character is hexadecimal character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/tolower">C++ tolower()</a></h3>    
+          converts a given character to lowercase    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cctype/toupper">C++ toupper()</a></h3>    
+          converts a given character to uppercase    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_6 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/csignal" title="C++ &lt;csignal&gt;">C++ &lt;csignal&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/csignal/signal">C++ signal()</a></h3>    
+          sets error handler for specifiied signal    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/csignal/raise">C++ raise()</a></h3>    
+          sends signal to the program    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_7 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/clocale" title="C++ &lt;clocale&gt;">C++ &lt;clocale&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/clocale/setlocale">C++ setlocale()</a></h3>    
+          sets locale information for the current program    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/clocale/localeconv">C++ localeconv()</a></h3>    
+          returns current locale formatting rules    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_8 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cwctype" title="C++ &lt;cwctype&gt;">C++ &lt;cwctype&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswgraph">C++ iswgraph()</a></h3>    
+          checks if wide char has graphical representation    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswupper">C++ iswupper()</a></h3>    
+          checks if given wide character is uppercase    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswalnum">C++ iswalnum()</a></h3>    
+          checks if given wide character is alphanumeric    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswlower">C++ iswlower()</a></h3>    
+          checks if given wide character is lowercase    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswalpha">C++ iswalpha()</a></h3>    
+          checks if given wide character is an alphabet    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswprint">C++ iswprint()</a></h3>    
+          checks if given wide character can be printed    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswblank">C++ iswblank()</a></h3>    
+          checks if given wide character is blank character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswpunct">C++ iswpunct()</a></h3>    
+          checks if given wide character is punctuation    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswcntrl">C++ iswcntrl()</a></h3>    
+          checks if given wide char is control character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswspace">C++ iswspace()</a></h3>    
+          checks if given wide character is wide whitespace    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswctype">C++ iswctype()</a></h3>    
+          checks if given wide char has certain property    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswctrans">C++ towctrans()</a></h3>    
+          transforms a given wide character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswxdigit">C++ iswxdigit()</a></h3>    
+          checks if given wide character is hexadecimal num    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/wctrans">C++ wctrans()</a></h3>    
+          returns current transformation for wide character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/tolower">C++ towlower()</a></h3>    
+          converts given wide character to lowercase    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/wctype">C++ wctype()</a></h3>    
+          returns wide character classification    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/towupper">C++ towupper()</a></h3>    
+          converts given wide character to uppercase    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwctype/iswdigit">C++ iswdigit()</a></h3>    
+          checks if given wide character is digit or not    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_9 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cstdio" title="C++ &lt;cstdio&gt;">C++ &lt;cstdio&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/remove">C++ remove()</a></h3>    
+          deletes the specified file    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/rename">C++ rename()</a></h3>    
+          renames or moves specified file    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/tmpfile">C++ tmpfile()</a></h3>    
+          creates temporary file with auto-generated name    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fclose">C++ fclose()</a></h3>    
+          closes given file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fopen">C++ fopen()</a></h3>    
+          opens specified file    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/setbuf">C++ setbuf()</a></h3>    
+          sets the internal buffer to be used for I/O    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/tmpnam">C++ tmpnam()</a></h3>    
+          generates unique filename    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/printf">C++ printf()</a></h3>    
+          write formatted string to stdout    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/scanf">C++ scanf</a></h3>    
+          read data form stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fprintf">C++ fprintf()</a></h3>    
+          write a formatted string to file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fscanf">C++ fscanf()</a></h3>    
+          read data from file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/sscanf">C++ sscanf()</a></h3>    
+          read data from string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/snprintf">C++ snprintf()</a></h3>    
+          write formatted string to character string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/sprintf">C++ sprintf()</a></h3>    
+          write a formatted string to buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vfprintf">C++ vfprintf()</a></h3>    
+          write formatted string to file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vprintf">C++ vprintf()</a></h3>    
+          printf but takes args from vlist instead    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vsnprintf">C++ vsnprintf()</a></h3>    
+          write formatted string to string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vsprintf">C++ vsprintf()</a></h3>    
+          write formatted string to a string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fgetc">C++ fgetc()</a></h3>    
+          reads the next character from given input stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fgets">C++ fgets()</a></h3>    
+          reads n number of characters from file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fputc">C++ fputc()</a></h3>    
+          writes character to given output stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fputs">C++ fputs()</a></h3>    
+          writes string to file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/getchar">C++ getchar()</a></h3>    
+          reads next character from stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/gets">C++ gets()</a></h3>    
+          reads line from stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/putc">C++ putc()</a></h3>    
+          writes character to given output stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/putchar">C++ putchar()</a></h3>    
+          writes a character to stdout    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fread">C++ fread()</a></h3>    
+          reads specified no. of characters from stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fwrite">C++ fwrite()</a></h3>    
+          writes specified number of characters to stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fgetpos">C++ fgetpos()</a></h3>    
+          gets current file position    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fsetpos">C++ fsetpos()</a></h3>    
+          sets stream file pointer to given position    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/puts">C++ puts()</a></h3>    
+          writes string to stdout    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/perror">C++ perror()</a></h3>    
+          prints error to stderr    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/rewind">C++ rewind()</a></h3>    
+          sets file position to beginning of stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/clearerr">C++ clearerr()</a></h3>    
+          resets error flags and EOF indicator for stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/feof">C++ feof() function</a></h3>    
+          checks if file stream EOF has been reached or not    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/ferror">C++ ferror()</a></h3>    
+          checks for errors in given stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/ftell">C++ ftell()</a></h3>    
+          returns current position of file pointer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/setvbuf">C++ setvbuf()</a></h3>    
+          change or specify buffering mode and buffer size    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fflush">C++ fflush()</a></h3>    
+          flushes any buffered data to the respective device    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/freopen">C++ freopen()</a></h3>    
+          opens a new file with stream associated to another    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vfscanf">C++ vfscanf()</a></h3>    
+          read data from a file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vscanf">C++ vscanf()</a></h3>    
+          read data from stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/vsscanf">C++ vsscanf()</a></h3>    
+          read data from a string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/ungetc">C++ ungetc()</a></h3>    
+          push previously read character back to the stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/fseek">C++ fseek()</a></h3>    
+          sets file position indicator for given file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cstdio/getc">C++ getc()</a></h3>    
+          reads next character from input stream    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_10 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cwchar" title="C++ &lt;cwchar&gt;">C++ &lt;cwchar&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fwide">C++ fwide()</a></h3>    
+          set or query orientation of given file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fgetwc">C++ fgetwc()</a></h3>    
+          reads next wide character from given input stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fgetws">C++ fgetws()</a></h3>    
+          reads specified num of wide characters from stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fputwc">C++ fputwc()</a></h3>    
+          writes wide character to the given output stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fputws">C++ fputws()</a></h3>    
+          writes wide string except null wide char to output    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fwprintf">C++ fwprintf()</a></h3>    
+          write formatted wide string to a file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/fwscanf">C++ fwscanf()</a></h3>    
+          reads wide character from file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/getwc">C++ getwc()</a></h3>    
+          reads next wide character from input stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/ungetwc">C++ ungetwc()</a></h3>    
+          push previously read wide character back to stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/putwc">C++ putwc()</a></h3>    
+          writes wide character to the given output stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/vfwprintf">C++ vfwprintf()</a></h3>    
+          write formatted wide string to a file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/putwchar">C++ putwchar()</a></h3>    
+          writes wide character to stdout    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/vfwscanf">C++ vfwscanf()</a></h3>    
+          read wide character string from a file stream    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/swprintf">C++ swprintf()</a></h3>    
+          write formatted wide string to wide string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/vswprintf">C++ vswprintf()</a></h3>    
+          write formatted wide string to wide string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/swscanf">C++ swscanf()</a></h3>    
+          reads wide character from wide string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/getwchar">C++ getwchar()</a></h3>    
+          reads next wide character from stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/vwprintf">C++ vwprintf()</a></h3>    
+          write formatted wide string to stdout    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/vwscanf">C++ vwscanf()</a></h3>    
+          read wide character from stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wprintf">C++ wprintf()</a></h3>    
+          write formatted wide string to stdout    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wscanf">C++ wscanf()</a></h3>    
+          reads wide character from stdin    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/vswscanf">C++ vswscanf()</a></h3>    
+          read wide character string from wide string buffer    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstod">C++ wcstod()</a></h3>    
+          converts wide string float number to double    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstof">C++ wcstof()</a></h3>    
+          converts wide string float number to float    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstol">C++ wcstol()</a></h3>    
+          converts wide string float number to long int    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstold">C++ wcstold()</a></h3>    
+          converts wide string float number to long double    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstok">C++ wcstok()</a></h3>    
+          returns next token in null terminated wide string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcschr">C++ wcschr()</a></h3>    
+          searches for a wide character in a wide string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/btowc">C++ btowc()</a></h3>    
+          converts character to its wide character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcrtomb">C++ wcrtomb()</a></h3>    
+          convert wide character to its narrow multibyte rep    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/mbrlen">C++ mbrlen()</a></h3>    
+          determines size in bytes of a multibyte character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wctob">C++ wctob()</a></h3>    
+          converts wide character to single byte character    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/mbrtowc">C++ mbrtowc()</a></h3>    
+          converts narrow multibyte char to wide char    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsrtombs">C++ wcsrtombs()</a></h3>    
+          convert wide char seq to narrow multibyte char seq    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/mbsinit">C++ mbsinit()</a></h3>    
+          describe initial conversion state of mbstate_t obj    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcscat">C++ wcscat()</a></h3>    
+          appends copy of wide string to the end of another    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/mbsrtowcs">C++ mbsrtowcs()</a></h3>    
+          convert narrow multibyte char seq to wide char seq    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsncat">C++ wcsncat()</a></h3>    
+          appends specified num of wide char to another str    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcscmp">C++ wcscmp()</a></h3>    
+          lexicographically compares two wide string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsncmp">C++ wcsncmp()</a></h3>    
+          compares specified number of wide char of strings    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcscpy">C++ wcscpy()</a></h3>    
+          copies wide character string from source to dest    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcscspn">C++ wcscspn()</a></h3>    
+          returns number of wide char before first occurence    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcslen">C++ wcslen()</a></h3>    
+          returns length of the given wide string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsrchr">C++ wcsrchr()</a></h3>    
+          searches last occurrence of wide char in string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsspn">C++ wcsspn()</a></h3>    
+          returns length of maximum initial segment    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsstr">C++ wcsstr()</a></h3>    
+          finds first occurrence of wide substring in a str    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsncpy">C++ wcsncpy()</a></h3>    
+          copies specified number of wide characters    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsxfrm">C++ wcsxfrm()</a></h3>    
+          transforms wide string to implementation defined    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcspbrk">C++ wcspbrk()</a></h3>    
+          searches for set of wide char in given wide string    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcsftime">C++ wcsftime()</a></h3>    
+          converts given date and time to wide character str    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wmemcmp">C++ wmemcmp()</a></h3>    
+          compares wide chars of two wide strings    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wmemcpy">C++ wmemcpy()</a></h3>    
+          copies specified num of wide char from src to dest    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wmemmove">C++ wmemmove()</a></h3>    
+          moves wide chars from src to dest    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wmemset">C++ wmemset()</a></h3>    
+          copies single wide char for a certain num of time    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wmemchr">C++ wmemchr()</a></h3>    
+          searches for first occurrence of wide char    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstoll">C++ wcstoll()</a></h3>    
+          converts wide string of specified base to int    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstoul">C++ wcstoul()</a></h3>    
+          converts wide str of given base to unsigned long    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcstoull">C++ wcstoull()</a></h3>    
+          converts wide string num to unsigned long long    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cwchar/wcscoll">C++ wcscoll()</a></h3>    
+          compares two null terminated wide string    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_11 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cuchar" title="C++ &lt;cuchar&gt;">C++ &lt;cuchar&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cuchar/c16rtomb">C++ c16rtomb()</a></h3>    
+          converts 16 bit char to narrow multibyte char    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cuchar/c32rtomb">C++ c32rtomb()</a></h3>    
+          converts 32 bit char to narrow multibyte char    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cuchar/mbrtoc16">C++ mbrtoc16()</a></h3>    
+          converts narrow multibyte char to 16 bit char    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cuchar/mbrtoc32">C++ mbrtoc32()</a></h3>    
+          converts narrow multibyte char to 32 bit char    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_12 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/csetjmp" title="C++ &lt;csetjmp&gt;">C++ &lt;csetjmp&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/csetjmp/longjmp">C++ longjmp() and setjmp()</a></h3>    
+          restores previously saved environment    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_13 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/cfenv" title="C++ &lt;cfenv&gt;">C++ &lt;cfenv&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/feclearexcept">C++ feclearexcept()</a></h3>    
+          attempts to clear floating point exception flags    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/feraiseexcept">C++ feraiseexcept()</a></h3>    
+          raises floating point exceptions specified    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fegetexceptflag">C++ fegetexceptflag()</a></h3>    
+          gets floating point exception flags    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fesetexceptflag">C++ fesetexceptflag()</a></h3>    
+          sets given floating point exceptions to the env    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fegetround">C++ fegetround()</a></h3>    
+          gets round direction mode    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fegetenv">C++ fegetenv()</a></h3>    
+          store status of floating point env in an object    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/feupdateenv">C++ feupdateenv()</a></h3>    
+          updates floating point environment    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fetestexcept">C++ fetestexcept()</a></h3>    
+          tests floating point exception    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fesetround">C++ fesetround()</a></h3>    
+          set rounding direction    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/fesetenv">C++ fesetenv()</a></h3>    
+          set floating point environment    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/cfenv/feholdexcept">C++ feholdexcept()</a></h3>    
+          saves and clear floating point status flags    
+              </div>
+
+        </div>
+    </div>
+
+    <div class="view view-c-library-functions-homepage view-id-c_library_functions_homepage view-display-id-attachment_14 attachment-views-individual">
+        <div class="card card--reference">
+
+            
+                <h3 class="card__title card__title--reference"> <a href="https://www.programiz.com/cpp-programming/library-function/ctime" title="C++ &lt;ctime&gt;">C++ &lt;ctime&gt;<svg class="programiz-icon programiz-icon--small ml-2x">
+                        <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use>
+                    </svg></a></h3>
+            
+              <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/clock">C++ clock()</a></h3>    
+          returns processor time consumed by program    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/difftime">C++ difftime()</a></h3>    
+          computes difference between two times in seconds    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/time">C++ time()</a></h3>    
+          returns current calendar time    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/ctime">C++ ctime()</a></h3>    
+          converts time since epoch to char representation    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/asctime">C++ asctime()</a></h3>    
+          converts calendar time to character representation    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/gmtime">C++ gmtime()</a></h3>    
+          converts given time since epoch to UTC time    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/localtime">C++ localtime()</a></h3>    
+          converts given time since epoch to local time    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/mktime">C++ mktime()</a></h3>    
+          converts local calendar time to time since epoch    
+              </div>
+  <div class="reference-data--row">
+      
+          <h3 class="reference-data__row__title"><a href="https://www.programiz.com/cpp-programming/library-function/ctime/strftime">C++ strftime()</a></h3>    
+          converts calendar time to multibyte character str    
+              </div>
+
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        
+
+    </div>
+</div>
+      
+      <footer class="footer">
+        
+    
+    
+    
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="mauticform_wrapper_generalsubscribersformmobile" class="sp-footer-form d-block d-md-none mauticform_wrapper">
+        <form autocomplete="false" role="form" method="post" action="https://email.programiz.com/form/submit?formId=9" id="mauticform_generalsubscribersformmobile" data-mautic-form="generalsubscribersformmobile" enctype="multipart/form-data" class="card card--even-spaced card--shadowed-up card--no-border" target="mauticiframe_generalsubscribersformmobile">
+          <div class="mauticform-error" id="mauticform_generalsubscribersformmobile_error"></div>
+          <div class="mauticform-message" id="mauticform_generalsubscribersformmobile_message"></div>
+          <div class="mauticform-innerform">
+            <div class="footer__form__title">Join our newsletter for the latest updates.</div>
+
+            <div class="mauticform-page-wrapper mauticform-page-1 input-group" data-mautic-form-page="1">
+
+              <div id="mauticform_generalsubscribersformmobile_email1" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required input-group" data-validate="email1" data-validation-type="email">
+                <input id="mauticform_input_generalsubscribersformmobile_email1" name="mauticform[email1]" value="" placeholder="Enter Email Address*" class="mauticform-input input-group__control" type="email">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+              </div>
+
+              <div id="mauticform_generalsubscribersformmobile_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-2 input-group">
+                <button type="submit" name="mauticform[submit]" id="mauticform_input_generalsubscribersformmobile_submit" value="" class="mauticform-button input-group__action btn btn--primary">Join</button>
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" name="mauticform[formId]" id="mauticform_generalsubscribersformmobile_id" value="9">
+          <input type="hidden" name="mauticform[return]" id="mauticform_generalsubscribersformmobile_return" value="">
+          <input type="hidden" name="mauticform[formName]" id="mauticform_generalsubscribersformmobile_name" value="generalsubscribersformmobile">
+
+        <input type="hidden" name="mauticform[messenger]" id="mauticform_generalsubscribersformmobile_messenger" value="1"></form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xl-4 col-lg-5 col-md-6 d-none d-md-block">
+      <div class="footer__content">
+        <object class="footer__logo" data="./C++ Standard Library _ Programiz_files/logo_white.svg" type="image/svg+xml"></object>
+
+        <div class="mauticform_wrapper" id="mauticform_wrapper_generalsubscribersform">
+          <form action="https://email.programiz.com/form/submit?formId=6" autocomplete="false" class="footer__form" data-mautic-form="generalsubscribersform" enctype="multipart/form-data" id="mauticform_generalsubscribersform" method="post" role="form" target="mauticiframe_generalsubscribersform">
+            <div class="mauticform-error" id="mauticform_generalsubscribersform_error"></div>
+            <div class="mauticform-message" id="mauticform_generalsubscribersform_message"></div>
+            <div class="mauticform-innerform">
+              <div class="footer__form__title">Join our newsletter for the latest updates.</div>
+              <div class="mauticform-page-wrapper mauticform-page-1 input-group" data-mautic-form-page="1">
+                <div class="mauticform-row mauticform-email mauticform-field-1 mauticform-required input-group" data-validate="email1" data-validation-type="email" id="mauticform_generalsubscribersform_email1">
+                  <input class="mauticform-input input-group__control" id="mauticform_input_generalsubscribersform_email1" name="mauticform[email1]" placeholder="Enter Email Address*" type="email" value="">
+                  <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+                </div>
+                <div class="mauticform-row mauticform-button-wrapper mauticform-field-2 input-group" id="mauticform_generalsubscribersform_submit">
+                  <button class="mauticform-button input-group__action btn btn--primary" id="mauticform_input_generalsubscribersform_submit" name="mauticform[submit]" type="submit" value="">Join</button>
+                </div>
+              </div>
+            </div>
+            <input id="mauticform_generalsubscribersform_id" name="mauticform[formId]" type="hidden" value="6">
+            <input id="mauticform_generalsubscribersform_return" name="mauticform[return]" type="hidden" value="">
+            <input id="mauticform_generalsubscribersform_name" name="mauticform[formName]" type="hidden" value="generalsubscribersform">
+          <input type="hidden" name="mauticform[messenger]" id="mauticform_generalsubscribersform_messenger" value="1"></form>
+        </div>
+        <div class="footer__vendor-btn">
+          <div class="footer__vendor-btn__row">
+            <a href="https://play.google.com/store/apps/details?id=com.programiz.learnpython&amp;referrer=utm_campaign%3Dprogramiz-footer%26utm_source%3Dprogramiz-website" title="Learn Python: Programiz on Play Store">
+              <img class="app-download-btn app-download-btn--offset" src="./C++ Standard Library _ Programiz_files/playstore.svg" height="39" width="138">
+            </a>
+          </div>
+
+          <div class="footer__vendor-btn__row">
+            <a href="https://apps.apple.com/app/apple-store/id1472188189?pt=120228772&amp;ct=programiz-footer&amp;mt=8" title="Learn Python: Programiz on App Store">
+              <img class="app-download-btn" src="./C++ Standard Library _ Programiz_files/appstore.svg" height="39" width="138">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Tutorials</h4>
+
+        <ul class="footer__links">
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/python-programming" title="Python Tutorials">Python 3 Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/javascript" title="JavaScript Tutorial">JavaScript Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/c-programming" title="C Tutorial">C Tutorial</a>
+          </li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/java-programming" title="Java Tutorial">Java
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/kotlin-programming" title="Kotlin Tutorial">Kotlin Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/cpp-programming" title="C++ Tutorial">C++
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/swift-programming" title="Swift Tutorial">Swift
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/csharp-programming" title="C# Tutorial">C#
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/dsa" title="Data Structures and Algorithms">DSA
+              Tutorial</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-2  col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Examples</h4>
+
+        <ul class="footer__links">
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/python-programming/examples" title="Python Examples">Python Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/javascript/examples" title="JavaScript Examples">JavaScript Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/c-programming/examples" title="C Examples">C
+              Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/java-programming/examples" title="Java Examples">Java Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/kotlin-programming/examples" title="Kotlin Examples">Kotlin Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/cpp-programming/examples" title="C++ Examples">C++ Examples</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Company</h4>
+
+        <ul class="footer__links">
+          <li class="footer__links__nodes"><a class="link-node" id="unic-gdpr" onclick="__tcfapi(&quot;openunic&quot;);return false;" style="display:none;cursor:pointer;">Change Ad Consent</a>
+          </li>
+          <li class="footer__links__nodes"><a class="link-node" id="unic-ccpa" onclick="window.__uspapi(&#39;openunic&#39;)" style="display:none;cursor:pointer;">Do not sell my data</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/about-us" title="About us">About</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/advertise" title="Advertise with us">Advertising</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/contact" title="Contact us">Contact</a></li>
+          <li class="footer__links__nodes"><a title="Blog" href="https://www.programiz.com/blog" class="link-node">Blog</a></li>
+          <li class="footer__links__nodes"><a title="Programiz on Youtube" href="https://www.youtube.com/channel/UCREFp3D_n8JfcDonlm7Mpyw" class="link-node">Youtube</a></li>
+
+      </ul></div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Apps</h4>
+
+        <ul class="footer__links">
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/learn-python" title="Learn Python: Programiz">Learn Python</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="https://www.programiz.com/learn-c" title="Learn C Programming: Programiz">Learn C Programming</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-brand-area d-block d-md-none">
+    <div class="d-flex justify-content-center">
+      <img class="sp-brand-area__logo" src="./C++ Standard Library _ Programiz_files/logo_white(1).svg" width="84" height="26">
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <div class="footer__vendor-btn__row">
+        <a href="https://play.google.com/store/apps/details?id=com.programiz.learnpython&amp;referrer=utm_campaign%3Dprogramiz-footer%26utm_source%3Dprogramiz-website" title="Learn Python: Programiz on Play Store">
+          <img class="app-download-btn app-download-btn--offset" src="./C++ Standard Library _ Programiz_files/playstore(1).svg" height="39" width="138">
+        </a>
+      </div>
+
+      <div class="footer__vendor-btn__row">
+        <a href="https://apps.apple.com/app/apple-store/id1472188189?pt=120228772&amp;ct=programiz-footer&amp;mt=8" title="Learn Python: Programiz on App Store">
+          <img class="app-download-btn" src="./C++ Standard Library _ Programiz_files/appstore(1).svg" height="39" width="138">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__end">
+    <p class="copyright-text">© Parewa Labs Pvt. Ltd. All rights reserved.</p>
+
+    <div class="social-icons">
+      <a class="social-icons__links" href="https://www.facebook.com/programiz" title="Programiz on Facebook"><svg class="programiz-icon programiz-icon--small">
+          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#facebook"></use>
+        </svg>
+      </a>
+      <a class="social-icons__links" href="https://www.instagram.com/_programiz/" title="Programiz on Instagram">
+        <svg class="programiz-icon programiz-icon--small">
+          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#instagram"></use>
+        </svg>
+      </a>
+      <a class="social-icons__links" href="https://www.linkedin.com/company/programiz" title="Programiz on Linkedin">
+        <svg class="programiz-icon programiz-icon--small">
+          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#linkedin"></use>
+        </svg>
+      </a>
+      <a class="social-icons__links" href="https://twitter.com/programiz" title="Programiz on Twitter">
+        <svg class="programiz-icon programiz-icon--small">
+          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#twitter"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function waitGEO() {
+    var readyGEO;
+    if (window['UnicI'] && window['UnicI'].geo && window['UnicI'].geo !== '-') {
+      readyGEO = true;
+      console.log(window['UnicI'].geo);
+      if (window['UnicI'].geo === 'EU') {
+        if (document.getElementById("unic-gdpr")) {
+          document.getElementById("unic-gdpr").style.display = 'block';
+        }
+      }
+      if (window['UnicI'].geo === 'CA') {
+        if (document.getElementById("unic-ccpa")) {
+          document.getElementById("unic-ccpa").style.display = 'block';
+        }
+      }
+    }
+    if (!readyGEO) {
+      setTimeout(waitGEO, 200);
+    }
+  })();
+</script>
+        </footer>
+  </main>
+  
+
+
+<iframe name="__tcfapiLocator" style="display: none;" __idm_frm__="4702" src="./C++ Standard Library _ Programiz_files/saved_resource.html"></iframe><iframe name="__uspapiLocator" style="display: none;" __idm_frm__="4703" src="./C++ Standard Library _ Programiz_files/saved_resource(1).html"></iframe><iframe id="mauticiframe_generalsubscribersformmobile" name="mauticiframe_generalsubscribersformmobile" style="display: none; margin: 0px; padding: 0px; border: none; width: 0px;" __idm_frm__="4704" src="./C++ Standard Library _ Programiz_files/saved_resource(2).html"></iframe><iframe id="mauticiframe_generalsubscribersform" name="mauticiframe_generalsubscribersform" style="display: none; margin: 0px; padding: 0px; border: none; width: 0px;" __idm_frm__="4705" src="./C++ Standard Library _ Programiz_files/saved_resource(3).html"></iframe><img width="0" height="0" style="display: none;"><iframe src="./C++ Standard Library _ Programiz_files/iu3.html" style="display: none;"></iframe></body></html>

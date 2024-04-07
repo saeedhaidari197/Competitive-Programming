@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1660120580 source:c:\users\hp\documents\icpc\sp\main.cpp
+	<iostream>
+	<stdio.h>
+
+1660241563 source:c:\users\hp\documents\icpc\1.sp\main.cpp
+	<iostream>
+	<stdio.h>
+

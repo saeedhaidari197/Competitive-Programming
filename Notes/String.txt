@@ -1,0 +1,239 @@
+Strings
+C++ has in its definition a way to represent sequence of characters as an object of class. This class is called std:: string. String class stores the characters as a sequence of bytes with a functionality of allowing access to single byte character.
+
+Functions of Strings
+1.getline() :- This function is used to store a stream of characters as entered by the user in the object memory.
+
+2. push_back() :- This function is used to input a character at the end of the string.
+
+3. pop_back() :- Introduced from C++11(for strings), this function is used to delete the last character from the string.
+
+4. capacity() :- This function returns the capacity allocated to the string, which can be equal to or more than the size of the string. Additional space is allocated so that when the new characters are added to the string, the operations can be done efficiently.
+
+5. resize() :- This function changes the size of string, the size can be increased or decreased.
+
+6.length():-This function finds the length of the string
+
+7.shrink_to_fit() :- This function decreases the capacity of the string and makes it equal to the minimum capacity of the string. This operation is useful to save additional memory if we are sure that no further addition of characters have to be made.
+8. begin() :- This function returns an iterator to beginning of the string.
+
+9. end() :- This function returns an iterator to end of the string.
+
+10. rbegin() :- This function returns a reverse iterator pointing at the end of string.
+
+11. rend() :- This function returns a reverse iterator pointing at beginning of string.
+12. copy(“char array”, len, pos) :- This function copies the substring in target character array mentioned in its arguments. It takes 3 arguments, target char array, length to be copied and starting position in string to start copying.
+
+13. swap() :- This function swaps one string with other.
+14. erase() :- erase all sring --- erase(string.begin() + i) erase char at position i --- erase(string.begin()+a, string.end()-i) erase from range a to i
+15. sort() :- sort the string sort(str.begin(), str.end()) sort all of the string -- sort(str.begin()+a, str.end()-i) sort from a to i
+16. compare() :- str1.compare(str2) if equal returns 0 if str1 < str2 returns -1 if str1 > str2 return 1
+
+functions in Code
+
+#include<iostream> 
+#include<string> // for string class 
+using namespace std; 
+int main() 
+{ 
+    // Declaring string 
+    string str; 
+  
+    // Taking string input using getline() 
+    // "geeksforgeek" in givin output 
+    getline(cin,str); 
+  
+    // Displaying string 
+    cout << "The initial string is : "; 
+    cout << str << endl; 
+  
+    // Using push_back() to insert a character 
+    // at end 
+    // pushes 's' in this case 
+    str.push_back('s'); 
+  
+    // Displaying string 
+    cout << "The string after push_back operation is : "; 
+    cout << str << endl; 
+  
+    // Using pop_back() to delete a character 
+    // from end 
+    // pops 's' in this case 
+    str.pop_back(); 
+  
+    // Displaying string 
+    cout << "The string after pop_back operation is : "; 
+    cout << str << endl; 
+
+    // Initializing string 
+    string str = "geeksforgeeks is for geeks"; 
+  
+    // Displaying string 
+    cout << "The initial string is : "; 
+    cout << str << endl; 
+  
+    // Resizing string using resize() 
+    str.resize(13); 
+  
+    // Displaying string 
+    cout << "The string after resize operation is : "; 
+    cout << str << endl; 
+  
+    // Displaying capacity of string 
+    cout << "The capacity of string is : "; 
+    cout << str.capacity() << endl; 
+  
+    //Displaying length of the string 
+    cout<<"The length of the string is :"<<str.length()<<endl; 
+  
+    // Decreasing the capacity of string 
+    // using shrink_to_fit() 
+    str.shrink_to_fit(); 
+  
+    // Displaying string 
+    cout << "The new capacity after shrinking is : "; 
+    cout << str.capacity() << endl; 
+
+
+    // Initializing string` 
+    string str = "geeksforgeeks"; 
+  
+    // Declaring iterator 
+    std::string::iterator it; 
+  
+    // Declaring reverse iterator 
+    std::string::reverse_iterator it1; 
+  
+    // Displaying string 
+    cout << "The string using forward iterators is : "; 
+    for (it=str.begin(); it!=str.end(); it++) 
+    cout << *it; 
+    cout << endl; 
+  
+    // Displaying reverse string 
+    cout << "The reverse string using reverse iterators is : "; 
+    for (it1=str.rbegin(); it1!=str.rend(); it1++) 
+    cout << *it1; 
+    cout << endl; 
+
+
+    // Initializing 1st string 
+    string str1 = "geeksforgeeks is for geeks"; 
+  
+    // Declaring 2nd string 
+    string str2 = "geeksforgeeks rocks"; 
+  
+    // Declaring character array 
+    char ch[80]; 
+  
+    // using copy() to copy elements into char array 
+    // copies "geeksforgeeks" 
+    str1.copy(ch,13,0); 
+  
+    // Diplaying char array 
+    cout << "The new copied character array is : "; 
+    cout << ch << endl << endl; 
+  
+    // Displaying strings before swapping 
+    cout << "The 1st string before swapping is : "; 
+    cout << str1 << endl; 
+    cout << "The 2nd string before swapping is : "; 
+    cout << str2 << endl; 
+  
+    // using swap() to swap string content 
+    str1.swap(str2); 
+  
+    // Displaying strings after swapping 
+    cout << "The 1st string after swapping is : "; 
+    cout << str1 << endl; 
+    cout << "The 2nd string after swapping is : "; 
+    cout << str2 << endl; 
+  
+    return 0; 
+  
+} 
+
+
+
+when you cin an int and after that you use getline function you have to do it twise because getline funtion also read "\n" this as an input.
+when you getline you can seperate the word by using this:	
+    	string S, T;
+    	getline(cin, S);
+    	stringstream X(S);
+    	while (getline(X, T, ' ')) {
+        	cout << T << endl;
+    	}
+this code will cout each word of the sentence.
+if you want to use char array and use getline function you have to write it like this
+	char arr[maxLen]
+	cin.getline(arr, maxlen, '$')
+it will read till max length or till $ this sign and the third parameter is optional
+
+
+
+this is how when you are given a line of number you get it as string and convert it to integer one by one;
+			getline(cin,s);
+			string T;
+			int total = 0;
+			stringstream x(s);
+			while(getline(x, T, ' ')){
+				int num = stoi(T);
+				total += num;
+			}
+Count Number of accurance of a substring in a string
+// Simple C++ program to count occurrences
+// of pat in txt.
+#include<bits/stdc++.h>
+using namespace std;
+  
+int countFreq(string &pat, string &txt)
+{
+    int M = pat.length();
+    int N = txt.length();
+    int res = 0;
+   
+    /* A loop to slide pat[] one by one */
+    for (int i = 0; i <= N - M; i++)
+    {
+        /* For current index i, check for
+           pattern match */
+        int j;
+        for (j = 0; j < M; j++)
+            if (txt[i+j] != pat[j])
+                break;
+  
+        // if pat[0...M-1] = txt[i, i+1, ...i+M-1]
+        if (j == M) 
+        {
+           res++;
+           j = 0;
+        }
+    }
+    return res;
+}
+   
+/* Driver program to test above function */
+int main()
+{
+   string txt = "dhimanman";
+   string pat = "man";
+   cout << countFreq(pat, txt);
+   return 0;
+}
+
+Second Method for counting the occurrence of a substring in a string
+int countFreq(string &pat, string &txt)
+{
+	// pat is substring
+	// txt is string
+   int occurrences = 0;
+   std::string::size_type pos = 0;
+   while ((pos = txt.find(pat, pos )) != std::string::npos) {
+          ++ occurrences;
+          pos += pat.length();
+   }
+   return occurrences;
+
+}
+
+

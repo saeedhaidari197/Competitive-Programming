@@ -1,0 +1,22 @@
+Bit Operator AND (&)
+when ever we want modula of a number to the power of 2
+for example 27%4 we can solve this with and operator so fast.
+Formula ( number & (2 ^ to the power - 1) )
+so 27%4 we can find it with 27 & (2^2 -1) more faster
+
+Bit Operator OR (|)
+it is used for 2 purposes most.
+1. it can do the sum of number which are to the power of two so fast;
+for example 2 | 8 | 32 = 42 instead of + we can use | to sum them
+2. it can be also used for bitmasking instead of taking an array of bolean and making each index 1 or 0 we can
+take an int and initialize it with zero and make each bit of it 1 .
+int B = 0;
+B |= (1 << i) this will make the ith bit 1
+if(B & (1 << i) this will check if the ith bit is 1 
+
+Bit Operator XOR ()
+it can be used to swap two number without having a three integer
+x = x ^ y
+y = y ^ x
+x = x ^ y
+the two inteegers are swaped
